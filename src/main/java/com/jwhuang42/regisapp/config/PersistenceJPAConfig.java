@@ -1,6 +1,8 @@
 package com.jwhuang42.regisapp.config;
 
+import org.hibernate.annotations.SQLInsert;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -75,6 +77,7 @@ public class PersistenceJPAConfig {
     Properties additionalProperties() {
         Properties properties = new Properties();
         properties.setProperty("hibernate.hbm2ddl.auto", "create");
+        properties.setProperty("spring.datasource.initialize", "true");
 
         return properties;
     }

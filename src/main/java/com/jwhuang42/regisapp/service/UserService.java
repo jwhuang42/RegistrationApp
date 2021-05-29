@@ -2,6 +2,7 @@ package com.jwhuang42.regisapp.service;
 
 import com.jwhuang42.regisapp.model.User;
 import com.jwhuang42.regisapp.repository.UserRepository;
+import org.hibernate.annotations.SQLInsert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

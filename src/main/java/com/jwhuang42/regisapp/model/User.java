@@ -1,5 +1,8 @@
 package com.jwhuang42.regisapp.model;
 
+import org.hibernate.annotations.SQLInsert;
+
+import javax.annotation.sql.DataSourceDefinitions;
 import javax.persistence.*;
 
 @Entity
